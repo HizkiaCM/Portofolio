@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizkia Website</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header dan Nav Bar -->
+    <header class="main-header">
+        <!-- Logo -->
+        <img src="./assets/logo.png" alt="Logo" class="main-logo" />
+
+        <!-- Navigation Bar -->
+        <nav aria-label="Main navigation">
+            <a href="#home-section">Home</a>
+            <a href="#about-section">About</a>
+            <a href="#portfolio-section">Portfolio</a>
+            <a href="#contact-section">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home-section">
+            <!-- Welcome Speech -->
+            <header>
+                <h2 id="welcome-message">Hi, Welcome to my website</h2>
+            </header>
+
+            <div class="banner-slideshow">
+                <div class="banner-slide fade">
+                    <img src="./assets/web.jpg" alt="Banner 1">
+                </div>
+                <div class="banner-slide fade">
+                    <img src="./assets/code.png" alt="Banner 2">
+                </div>
+                <div class="banner-slide fade">
+                    <img src="./assets/design.jpg" alt="Banner 3">
+                </div>
+
+                <!-- Navigation Arrows -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!-- Banner Content -->
+            <!--<div class="banner-img"></div>-->
+
+            <!-- Section Content -->
+            <article class="section-content">
+                <p>I'm a passionate Web Developer who’s currently learning and diving deeper into building modern, user-friendly applications.</p>
+                <p>I love exploring new tools, frameworks, and creative solutions. Currently sharpening my skills with real-world projects.</p>
+                <p>Feel free to check out my <a href="#portfolio-section">portfolio</a> or <a href="#contact-section">reach out</a> for collaboration!</p>
+            </article>
+
+        </section>
+
+        <!-- About me Section -->
+        <section id="about-section">
+            <header>
+                <h2>About Me</h2>
+            </header>
+            <article class="section-content about-me">
+                <img src="./assets/foto profil.png" alt="Hizkia Christian Meganathan" class="profile-img">
+                <h3>Hizkia Christian Meganathan</h3>
+                <p class="subtitle">Web Developer Enthusiast </p>
+                <div class="bio">
+                    Dynamic Computer Engineering Graduate from Satya Wacana Christian University (GPA: 3.26) with 4 months of hands-on experience in web-based system development. Proficient in multiple programming languages and frameworks, I bring strong analytical skills, effective time management, and seamless teamwork to every project. Known for my clear communication, adaptability, and self-driven work ethic, I thrive in both collaborative and independent environments. With a passion for innovation, relentless work ethic, and eagerness to learn, I am ready to deliver high-impact solutions in the IT industry.
+                    <br><br>
+                    For me, development is not just about writing code — it’s about crafting smart and effective digital solutions. Right now, I’m actively learning and improving my skills in front-end and back-end technologies, as well as Web development using modern frameworks.
+                    <br><br>
+                    Feel free to explore this site to see more about my projects and learning journey!
+                </div>
+                <div class="tech-stack">
+                    <h3 class="tech-title">Our Technology Stack</h3>
+                    <div class="techbox-container">
+                        <div class="tech-icon shadow"><img src="./assets/php.svg" alt="PHP"></div>
+                        <div class="tech-icon shadow"><img src="./assets/javascript-js.svg" alt="Javascript"></div>
+                        <div class="tech-icon shadow"><img src="./assets/python.svg" alt="Python"></div>
+                        <div class="tech-icon shadow"><img src="./assets/laravel.svg" alt="Laravel"></div>
+                        <div class="tech-icon shadow"><img src="./assets/react.svg" alt="C"></div>
+                        <div class="tech-icon shadow"><img src="./assets/office-database.svg" alt="Database"></div>
+                    </div>
+            </article>
+        </section>
+          
+        
+        <!-- Portfolio Section -->
+        <section id="portfolio-section">
+            <header>
+                <h2>My Portfolio</h2>
+            </header>
+            <article class="section-content">
+                <p>Here are some of the projects I’ve worked on recently.</p>
+
+                <div id="portfolio-cards-container" class="portfolio-cards"></div>
+            </article>
+        </section>
+
+        <!-- Contact me Section -->
+        <section id="contact-section">
+            <header>
+                <h2>Contact Me</h2>
+            </header>
+
+            <article class="section-content contact-container">
+                <form id="contact-form" class="contact-form">
+                    <label>
+                        Nama :
+                        <input type="text" id="name" placeholder="Nama" required />
+                    </label>
+
+                    <label>
+                        Tanggal Lahir :
+                        <input type="date" id="dob" required />
+                    </label>
+
+                    <label>
+                        Jenis Kelamin :
+                        <div class="gender-options">
+                            <label><input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki</label>
+                            <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+                        </div>
+                    </label>
+
+                    <label>
+                        Pesan :
+                        <textarea id="message" placeholder="Pesan" required></textarea>
+                    </label>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div id="contact-result" class="contact-result">
+                    <p><strong>Current time</strong> : <span id="current-time"></span></p>
+                    <p><strong>Nama</strong> : <span id="result-name">-</span></p>
+                    <p><strong>Tanggal Lahir</strong> : <span id="result-dob">-</span></p>
+                    <p><strong>Jenis Kelamin</strong> : <span id="result-gender">-</span></p>
+                    <p><strong>Pesan</strong> : <span id="result-message">-</span></p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/hizkiacm/" target="_blank">
+                <img src="./assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://linkedin.com/in/hizkia-christian-meganathan/" target="_blank">
+                <img src="./assets/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/HizkiaCM" target="_blank">
+                <img src="./assets/github.png" alt="GitHub">
+            </a>
+        </div>  
+        <p>&copy; 2025 Hizkia Christian Meganathan. All rights reserved.</p> 
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
