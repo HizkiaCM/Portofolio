@@ -21,21 +21,21 @@ if (welcomeEl) {
     const portfolioData = [
         {
             title: "Project 1",
-            description: "Description for project 1.",
+            description: "Antrian Rumah Sakit",
             image: "assets/antrian.png",
             link: "https://hizkiacm.github.io/Antrian/"
         },
         {
             title: "Project 2",
-            description: "Description for project 2.",
+            description: "CRUD Data Pegawai",
             image: "assets/data pegawai.png",
             link: "https://hizkiacm.github.io/Data-Pegawai/"
         },
         {
             title: "Project 3",
-            description: "Description for project 3.",
+            description: "Portofolio",
             image: "assets/web des.png",
-            link: "https://revou-fundamental-course.github.io/07-apr-25-HizkiaCM/"
+            link: "https://hizkiacm.github.io/Portofolio/"
         },
 
     ];
